@@ -3,5 +3,11 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /assets
+  static_dir: dist/assets
+- url: /(.*\.(js|map|html))
+  static_files: dist/\1
+  upload: dist/.*\.(js|map|html)$
 - url: /
-  static_dir: dist
+  static_files: dist/index.html
+  upload: dist/index\.html

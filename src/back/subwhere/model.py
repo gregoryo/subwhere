@@ -82,7 +82,7 @@ class UserData(ndb.Model):
                 'Get an invalid latitude. Latitude must be a float between '\
                 '-90° and 90°'
             )
-        args['latitude'] = latitude
+        args['lat'] = latitude
 
         longitude = float(json_info['lon'])
         if math.isnan(longitude) or math.isinf(longitude) \
@@ -91,7 +91,7 @@ class UserData(ndb.Model):
                 'Get an invalid longitude. Longitude must be a float between '\
                 '-180° and 180°'
             )
-        args['longitude'] = longitude
+        args['lon'] = longitude
         
         args['type'] = json_info['type']
         

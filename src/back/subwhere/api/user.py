@@ -34,7 +34,7 @@ class UsersHandler(webapp2.RequestHandler):
             query = UserData.query()
             types = self.request.get('types', None)
             if types is not None:
-                query.filter(UserData.type.IN(types.split(',')))
+                query = query.filter(UserData.type.IN(types.split(',')))
             for data in query:
                 results.append(data.to_json())
         self.response.write(json.dumps(results))

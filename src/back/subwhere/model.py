@@ -1,7 +1,9 @@
 """
 Subwhere model classes: communication with datastore on GCP
 """
-import ndb
+
+
+from google.appengine.ext import ndb
 
 
 class Greeting(ndb.Model):
@@ -12,5 +14,5 @@ class Greeting(ndb.Model):
     
     @classmethod
     def query_by_content(self, cnt):
-        return self.query(content == cnt)
+        return self.query(Greeting.content == cnt)
         

@@ -19,7 +19,7 @@ class MainPage(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/json'
         results = list()
         for greeting in Greeting.query_by_content('World'):
-            resdults.append('Hello %s'.format())
+            results.append('Hello {}'.format(greeting.content))
         self.response.write(json.dumps(results))
 
 

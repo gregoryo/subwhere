@@ -1,4 +1,7 @@
 #map {
-    background:  url(New_York_City_Subway_Map.svg);
+    background:  url(../../../assets/New_York_City_Subway_Map.svg);
     background-size: contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
 }

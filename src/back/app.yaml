@@ -1,7 +1,8 @@
 runtime: python27
 api_version: 1
 threadsafe: true
+service: back
 
 handlers:
-- url: /.*
+- url: /back/.*
   script: subwhere.web.app

@@ -8,6 +8,9 @@ handlers:
 - url: /(.*\.(js|map|html))
   static_files: dist/\1
   upload: dist/.*\.(js|map|html)$
+- url: /favicon\.ico
+  static_files: dist/favicon.ico
+  upload: dist/favicon\.ico
 - url: /
   static_files: dist/index.html
   upload: dist/index\.html

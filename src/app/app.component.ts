@@ -29,6 +29,7 @@ export class AppComponent implements OnInit{
     this.http.get('https://subwhere-182314.appspot.com/api/users')
       .subscribe(data => {
         console.log('data', data);
+        this.userDataService.infos = data
       })
     };
 }

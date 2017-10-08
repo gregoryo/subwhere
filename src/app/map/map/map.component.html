@@ -1,5 +1,7 @@
 <div id=map>
-    <agm-map [latitude]=40.7134 [longitude]=-74.0055>
-        <agm-marker [latitude]=userDataService.lat [longitude]=userDataService.lng></agm-marker>
+    <agm-map *ngIf="userDataService.infos" [latitude]=userDataService.lat [longitude]=userDataService.lng>
+        <agm-marker [latitude]=userDataService.lat [longitude]=userDataService.lng (click)="check()"></agm-marker>
+        <agm-marker [latitude]=info.lat [longitude]=info.lng *ngFor="let info of userDataService.infos">
+        </agm-marker>
     </agm-map>
 </div>

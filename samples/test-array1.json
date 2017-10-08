@@ -1,0 +1,73 @@
+[{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0056,
+    "type": "Delay",
+    "comment": "Sick Passenger",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0052,
+    "type": "Delay",
+    "comment": "you have to be kidding me",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0050,
+    "type": "Delay",
+    "comment": "not again",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0048,
+    "type": "Smell",
+    "comment": "like a barn",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0046,
+    "type": "Service Canceled",
+    "comment": "not again",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0044,
+    "type": "Smoke",
+    "comment": "",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0042,
+    "type": "On Time",
+    "comment": "i'm really on my way",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0020,
+    "type": "On Time",
+    "comment": "",
+    "expiration_datetime": null
+},
+{
+    "event_datetime": "2017-10-07 16:44:00",
+    "lat": 40.7134,
+    "lon": -74.0034,
+    "type": "Express Service",
+    "comment": "how am i suppposed to get to work",
+    "expiration_datetime": null
+}
+]

@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class UserDataService {
   id = Math.random()
-  position = [];
+  lat;
+  lng;
   constructor() { }
  // getEvents(): Event[] {
 //    return Events

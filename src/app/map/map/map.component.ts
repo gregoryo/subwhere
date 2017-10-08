@@ -9,11 +9,15 @@ import {UserDataService} from '../../user-data.service';
 export class MapComponent implements OnInit {
 
   constructor(private userDataService: UserDataService) { }
-
+  lat;
+  lng;
   ngOnInit() {
     console.log("I'm map");
-    console.log(this.userDataService.id);
-    console.log(this.userDataService.position);
+    setTimeout(function(){
+    this.lat = this.userDataService.lat;
+    this.lng = this.userDataService.lng;
+    console.log('I waited');
+    }, 3000);
   }
 
 }

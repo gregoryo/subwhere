@@ -20,12 +20,15 @@ export class AppComponent implements OnInit{
     const body = {"considerIp": true};
     this.http.post('//www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyB-doYs2QnTeC3LM4feBjuwymtfh1A0-tQ', body)
       .subscribe(data => {
-        this.lat = data['location']['lat'];
-        this.lng = data['location']['lng'];
+        console.log('data', data);
+        this.userDataService.lat = data['location']['lat'];
+        this.userDataService.lng = data['location']['lng'];
+        console.log('lat', this.userDataService.lat); 
+        console.log('lng', this.userDataService.lng); 
       })
-    console.log(this.lat, this.lng);
-    console.log(this.userDataService.id);
-    this.userDataService.position = [this.lat, this.lng];
-    console.log(this.userDataService.position); 
+    this.http.get('https://subwhere-182314.appspot.com/api/users')
+      .subscribe(data => {
+        console.log('data', data);
+      })
     };
 }
